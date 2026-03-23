@@ -3,6 +3,7 @@
 <head>
 <title>~*~ BigClungus's AWESOME Homepage ~*~ Welcome!!! ~*~</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Welcome to BigClungus's totally awesome homepage!!!">
 <meta name="keywords" content="cool, awesome, radical, BigClungus, homepage, netscape">
 <style type="text/css">
@@ -298,6 +299,80 @@ marquee {
     animation: bounce 0.7s ease-in-out infinite;
 }
 
+/* ── MOBILE RESPONSIVE ── */
+@media (max-width: 768px) {
+    /* Make main table fluid and stack columns */
+    .main-table {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Stack sidebar above content on mobile */
+    tr.main-content-row {
+        display: block;
+    }
+    .sidebar {
+        width: 100% !important;
+        box-sizing: border-box;
+        display: block;
+    }
+    .content {
+        width: 100% !important;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    /* Scale down wordart heading */
+    .wordart {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    .wordart-sub {
+        font-size: 16px;
+    }
+    .under-construction {
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+
+    /* Make inner tables fluid */
+    table {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    /* Prevent horizontal overflow everywhere */
+    body {
+        overflow-x: hidden;
+    }
+    td {
+        word-break: break-word;
+    }
+
+    /* Guestbook buttons: stack vertically on small screens */
+    .content a[style*="padding: 8px 20px"] {
+        display: block;
+        margin: 6px auto;
+        width: fit-content;
+    }
+
+    /* About-me table label column: don't force nowrap */
+    td[nowrap] {
+        white-space: normal;
+    }
+
+    /* Marquee text slightly smaller */
+    marquee {
+        font-size: 14px;
+    }
+
+    /* Hit counter sizing */
+    .counter {
+        font-size: 22px;
+    }
+}
+
 </style>
 </head>
 <body>
@@ -346,7 +421,7 @@ marquee {
   <div class="rainbow-divider"></div>
 
   <!-- MAIN CONTENT AREA -->
-  <tr>
+  <tr class="main-content-row">
 
     <!-- LEFT SIDEBAR -->
     <td class="sidebar">
